@@ -1,10 +1,8 @@
-<script setup lang="ts">
-const str = "Hello, World!"
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <div class="box">
-    <h1>APP根组件</h1>
+    <h1>APP根组件a</h1>
   </div>
 </template>
 

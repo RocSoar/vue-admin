@@ -10,13 +10,17 @@
     "lint": "eslint src",
     "fix": "eslint src --fix",
     "lint:eslint": "eslint src/**/*.{ts,vue} --cache --fix",
-    "lint:style": "stylelint src/**/*.{css,scss,vue} --cache --fix"
+    "lint:style": "stylelint src/**/*.{css,scss,vue} --cache --fix",
+    "commitlint": "commitlint --config commitlint.config.cjs -e -V",
+    "prepare": "husky install"
   },
   "dependencies": {
     "vue": "^3.2.47"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.22.5",
+    "@commitlint/cli": "^17.6.5",
+    "@commitlint/config-conventional": "^17.6.5",
     "@typescript-eslint/eslint-plugin": "^5.60.0",
     "@typescript-eslint/parser": "^5.60.0",
     "@vitejs/plugin-vue": "^4.1.0",
@@ -26,6 +30,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.15.0",
+    "husky": "^8.0.0",
     "postcss": "^8.4.24",
     "postcss-html": "^1.5.0",
     "postcss-scss": "^4.0.6",
